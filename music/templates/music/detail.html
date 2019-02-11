@@ -29,13 +29,13 @@
 
             <ul class="nav nav-pills" style="margin-bottom: 10px;">
                 <li role="presentation" class="active"><a href="{% url 'music:detail' album.id %}">View All</a></li>
-                <li role="presentation"><a href="{% url 'music:create_song' album.id %}">Add New Song</a></li>
+                <li role="presentation"><a href="{% url 'music:create_song' album.id %}">Add New Studnet</a></li>
             </ul>
 
             <div class="panel panel-default">
                 <div class="panel-body">
 
-                    <h3>All Songs</h3>
+                    <h3>All Studnet</h3>
 
                     {% if error_message %}
                         <p><strong>{{ error_message }}</strong></p>
@@ -44,10 +44,10 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Audio File</th>
-                            <th>Favorite</th>
-                            <th>Actions</th>
+                            <th>First</th>
+                            <th> last</th>
+                            <th>class</th>
+                            <th>Roll no</th>
                         </tr>
                         </thead>
                         <tbody>
